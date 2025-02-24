@@ -93,7 +93,7 @@ export const useGoogleAuth = () => {
     try {
       popupRef.current = window.open(
         `${
-          process.env.REACT_APP_AUTH_URL || "http://localhost:8000"
+          process.env.REACT_APP_AUTH_URL || "https://kanban-sso-mui-backend.azurewebsites.net"
         }/api/auth/google`,
         "Google Login",
         `width=${width},height=${height},left=${left},top=${top},scrollbars=yes,status=1`
