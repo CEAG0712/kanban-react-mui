@@ -14,7 +14,7 @@ export const useGoogleAuth = () => {
   const handleAuthMessage = useCallback(
     (event) => {
       const AUTH_ORIGIN =
-        process.env.REACT_APP_AUTH_URL || "http://localhost:8000";
+        process.env.REACT_APP_AUTH_URL || "https://kanban-sso-mui-backend.azurewebsites.net";
 
       if (event.origin !== AUTH_ORIGIN) return;
 
