@@ -484,7 +484,6 @@ function TaskList() {
         <form onSubmit={onSubmitCreateTask}>
           <TextField
             margin="normal"
-            required
             fullWidth
             label="Task Summary"
             name="taskSummary"
